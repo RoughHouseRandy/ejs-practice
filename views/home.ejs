@@ -8,6 +8,18 @@
 <body>
     <h1>EJS Practice</h1>
     <h2>Hello, <%= person.name %></h2>
+    <h3> Occupation: <%= person.occupation %></h3>
+    <% if(person.occupation === 'Plumber') { %>
+        <p>You work with pipes!</p>
+    <% } else { %>
+        <p>That's an interesting job!</p>
+    <% } %>
+    <h3>Your favorite color is: <%= person.favoriteColor %> </h3>
+    <% if(person.favoriteColor === 'Blue'){ %>
+        <p>Like the sky!</p>
+    <% } else { %>
+        <p>What a lovely color!</p>
+    <% } %>
 
 </body>
 </html>
